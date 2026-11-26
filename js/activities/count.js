@@ -16,7 +16,7 @@ export default async function count(ctx, act) {
     const v = W[rd.v];
     const n = rd.n;
     const word = (k) => (k === 1 ? v.t : v.pl || v.t);
-    field.className = 'count-field' + (n > 6 ? ' many' : '');
+    field.className = 'count-field' + (n > 12 ? ' many lots' : n > 6 ? ' many' : '');
     let k = 0;
     let tok = 0;
     let counted;
@@ -66,7 +66,7 @@ export default async function count(ctx, act) {
     await ctx.say(buddy, `${cap(NUM[n])} ${word(n)}!`);
 
     if (act.ask !== false && rd.ask !== false) {
-      const opts = shuffle([...new Set([n - 1, n, n + 1].map((x) => (x < 1 ? n + 2 : x > 10 ? n - 2 : x)))]);
+      const opts = shuffle([...new Set([n - 1, n, n + 1].map((x) => (x < 1 ? n + 2 : x > 20 ? n - 2 : x)))]);
       const cards = opts.map((x) => {
         const c = h('button', { class: 'card num-card', type: 'button' }, numberArt(x));
         c._n = x;

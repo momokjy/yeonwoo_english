@@ -100,6 +100,23 @@ export const W = {
   frog: w('frog', '🐸', { one: 'a frog', pl: 'frogs', sound: 'Ribbit!' }),
   fish: w('fish', '🐟', { one: 'a fish', pl: 'fish' }),
 
+  // school
+  pencil: w('pencil', '✏️', { one: 'a pencil', pl: 'pencils', a: 'wobble' }),
+  book2: w('book', '📕', { one: 'a book', pl: 'books', a: 'bounce' }),
+  bag: w('bag', '🎒', { one: 'a bag', pl: 'bags', a: 'bounce' }),
+  crayon: w('crayon', '🖍️', { one: 'a crayon', pl: 'crayons', a: 'wobble' }),
+  scissors: w('scissors', '✂️', { one: 'scissors', a: 'shake' }),
+  ruler: w('ruler', '📏', { one: 'a ruler', pl: 'rulers', a: 'wobble' }),
+
+  // family
+  mom: w('mom', '👩', { one: 'Mom', s: 'I love you, Mom!' }),
+  dad: w('dad', '👨', { one: 'Dad', s: 'I love you, Dad!' }),
+  brother: w('brother', '👦', { one: 'my brother' }),
+  sister: w('sister', '👧', { one: 'my sister' }),
+  grandma: w('grandma', '👵', { one: 'Grandma' }),
+  grandpa: w('grandpa', '👴', { one: 'Grandpa' }),
+  baby: w('baby', '👶', { one: 'the baby' }),
+
   // things
   bulb: w('light', '💡', { one: 'the light' }),
   star: w('star', '⭐', { one: 'a star', pl: 'stars' }),
@@ -107,7 +124,7 @@ export const W = {
 };
 
 // numbers 1–10
-['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'].forEach((t, i) => {
+['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'].forEach((t, i) => {
   W['n' + (i + 1)] = { t, num: i + 1, one: t, a: 'bounce' };
 });
 // every word knows its own id; animal sounds are said right after the name in "learn"

@@ -21,7 +21,7 @@ export function rounds(pool, n) {
 export default async function listen(ctx, act) {
   const pool = act.words.map((id) => W[id]);
   const order = rounds(pool, act.rounds || Math.min(5, pool.length));
-  const nChoices = Math.min(act.choices || 3, pool.length);
+  const nChoices = Math.min(act.choices || 4, pool.length); // 7-year-olds: four pictures
   const { buddy, main } = ctx.layout();
   const grid = h('div', { class: 'grid choices' });
   main.append(grid);

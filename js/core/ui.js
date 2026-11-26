@@ -10,7 +10,7 @@ export function markAnswer(el, val = '1') {
   if (FAST && el) el.dataset.answer = val;
 }
 
-export const TYPE_ICON = { learn: '👀', listen: '👂', drag: '✋', touch: '👆', scrub: '🧼', count: '🔢', say: '🎤', talk: '💬', move: '🕺', balloons: '🎈' };
+export const TYPE_ICON = { learn: '👀', listen: '👂', drag: '✋', touch: '👆', scrub: '🧼', count: '🔢', say: '🎤', talk: '💬', move: '🕺', balloons: '🎈', read: '📖', spell: '🔤', build: '🧩' };
 export const PRAISE = ['Yes!', 'Great!', 'Good job!', "That's right!", 'Wow!', 'You got it!', 'Super!'];
 
 // ---------------------------------------------------------------- pictures
@@ -223,6 +223,7 @@ const DECO = {
   kitchen: () => [h('div', { class: 'd-floor tiles' }), h('div', { class: 'd-window' }, h('span', { class: 'emo' }, '🌻')), emo('🫖', 92, 66, 5)],
   playroom: () => [h('div', { class: 'd-floor rug' }), h('div', { class: 'd-bunting' }), emo('🪁', 92, 30, 5)],
   bathroom: () => [h('div', { class: 'd-floor tiles blue' }), emo('🫧', 6, 30, 4), emo('🫧', 92, 22, 3), emo('🦆', 93, 80, 4)],
+  classroom: () => [h('div', { class: 'd-floor wood' }), h('div', { class: 'd-board' }, 'A B C'), emo('🌍', 6, 26, 5), emo('🖍️', 93, 74, 4)],
   night: () => [h('div', { class: 'd-floor wood dark' }), emo('🌙', 88, 10, 7), ...[12, 30, 52, 70, 20, 62].map((x, i) => emo('✨', x, 6 + (i % 3) * 9, 2.5, 'twinkle'))],
 };
 

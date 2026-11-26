@@ -6,7 +6,7 @@ const defaults = () => ({
   settings: {
     childName: 'Yeonwoo', // shown on screen
     childSay: 'Yun-woo', // how the English voice should pronounce it (연우)
-    rate: 0.85, // speech speed (kids like it a bit slower)
+    rate: 0.95, // speech speed (a little slower than adult speech)
     pitch: 1, // multiplies every friend's voice pitch (parent page: 목소리 높이)
     voiceURI: '',
     mic: true,

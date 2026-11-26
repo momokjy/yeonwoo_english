@@ -40,6 +40,9 @@ const CORE = [
   'js/activities/talk.js',
   'js/activities/move.js',
   'js/activities/balloons.js',
+  'js/activities/read.js',
+  'js/activities/spell.js',
+  'js/activities/build.js',
 ];
 
 self.addEventListener('install', (e) => {

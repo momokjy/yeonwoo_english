@@ -51,7 +51,7 @@ export function once(el, type = 'click') {
   return new Promise((resolve) => el.addEventListener(type, resolve, { once: true }));
 }
 
-export const NUM = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+export const NUM = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
 
 /** Restart a one-shot CSS animation class on an element. */
 export function flash(el, cls, ms = 700) {

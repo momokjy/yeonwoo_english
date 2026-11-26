@@ -48,7 +48,7 @@ async function solve(page, label) {
     if (await clickIf(page, '.buddy.tappable .buddy-art')) { await page.waitForTimeout(120); continue; }
     if (await clickIf(page, '.item[data-answer]:not(.used):not(.gone)')) { await page.waitForTimeout(900); continue; }
     if (await clickIf(page, '.thing:not(.counted)')) { await page.waitForTimeout(60); continue; }
-    if (await clickIf(page, 'button[data-answer]:not(.popped):not(.right)')) { await page.waitForTimeout(400); continue; }
+    if (await clickIf(page, 'button[data-answer]:not(.popped):not(.right):not(.used)')) { await page.waitForTimeout(400); continue; }
     if (await page.$('.prop')) await clickIf(page, '.prop');
 
     // touch: explore mode

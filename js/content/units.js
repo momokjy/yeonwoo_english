@@ -67,6 +67,15 @@ export const UNITS = [
           { t: 'Bye-bye!', e: '🙋' },
         ],
       },
+      {
+        type: 'build',
+        title: 'Make a Sentence',
+        items: [
+          { t: 'Nice to meet you!', e: '🤝' },
+          { t: 'My name is {name}.', e: '🧒' },
+          { t: 'How are you today?', e: '😊' },
+        ],
+      },
     ],
     parent: {
       goal: '인사와 자기소개 — 영어로 처음 친구를 만나요.',
@@ -76,6 +85,7 @@ export const UNITS = [
         ['My name is Yeonwoo.', '내 이름은 연우야.', '"My name is…" 뒤의 이름만 바꿔 가족 이름으로 놀이해요.'],
         ['How are you? — I\'m good!', '기분 어때? — 좋아!', '하원 후 매일 같은 질문을 해 주세요.'],
         ['Bye-bye! / See you!', '잘 가! / 또 봐!', '헤어질 때 항상 같은 표현을 쓰면 금방 익숙해져요.'],
+        ['Nice to meet you!', '만나서 반가워!', '새 친구를 만날 때 쓰는 인사예요.'],
       ],
     },
   },
@@ -111,6 +121,15 @@ export const UNITS = [
         ],
       },
       { type: 'listen', title: 'What Do We Do?', words: ['wakeup', 'brush', 'washface', 'dress', 'breakfast'], q: '{T}!', ok: '{T}!', nope: 'No, no!', intro: 'Listen and touch!' },
+      {
+        type: 'build',
+        title: 'My Morning',
+        items: [
+          { t: 'I wake up at seven.', e: '⏰' },
+          { t: 'I brush my teeth.', v: 'brush' },
+          { t: 'I wash my face.', v: 'washface' },
+        ],
+      },
     ],
     parent: {
       goal: '아침 루틴 — 일어나기, 양치, 세수, 옷 입기, 아침 먹기',
@@ -121,6 +140,7 @@ export const UNITS = [
         ['Wash your face.', '세수하자.', ''],
         ['Get dressed.', '옷 입자.', ''],
         ["Let's eat breakfast.", '아침 먹자.', ''],
+        ['I wake up at seven.', '나는 7시에 일어나.', '시계를 보며 "What time is it?" 하고 물어봐 주세요.'],
       ],
     },
   },
@@ -173,7 +193,16 @@ export const UNITS = [
           { propFx: 'toBuddy', mood: 'yummy', anim: 'jump', sfx: 'munch', c: 'Thank you! Yummy!' },
         ],
       },
-      { type: 'count', title: 'Count the Food', rounds: [{ v: 'strawberry', n: 3 }, { v: 'apple', n: 5 }, { v: 'egg', n: 4 }] },
+      { type: 'read', title: 'Read the Food', words: ['apple', 'banana', 'milk', 'bread', 'egg', 'strawberry'] },
+      { type: 'spell', title: 'Spell It!', words: ['egg', 'milk', 'apple'] },
+      {
+        type: 'build',
+        title: 'Ask Nicely',
+        items: [
+          { t: 'Can I have some milk, please?', v: 'milk' },
+          { t: 'I like strawberries.', v: 'strawberry' },
+        ],
+      },
     ],
     parent: {
       goal: '음식 이름과 "주세요 / 고마워요"',
@@ -184,6 +213,7 @@ export const UNITS = [
         ['Thank you! — You\'re welcome!', '고마워! — 천만에!', ''],
         ['Yes, please. / No, thank you.', '네, 주세요. / 아니요, 괜찮아요.', '간식을 고를 때 두 가지를 보여 주고 물어봐 주세요.'],
         ['Yummy!', '맛있다!', ''],
+        ['I like strawberries.', '나는 딸기가 좋아.', '좋아하는 음식을 "I like ..."로 말하는 놀이를 해 보세요.'],
       ],
     },
   },
@@ -239,7 +269,16 @@ export const UNITS = [
           { fx: null, c: "Let's go outside!" },
         ],
       },
-      { type: 'listen', title: "What's the Weather?", words: ['sunny', 'rainy', 'snowy', 'cloudy'], scene: 'sky', q: '{say}', ok: '{say}', intro: 'Listen! How is the weather?', rounds: 4 },
+      { type: 'read', title: 'Read the Weather', words: ['sunny', 'rainy', 'snowy', 'cloudy'], text: '{say}', scene: 'sky', rounds: 4 },
+      {
+        type: 'build',
+        title: 'What Do I Need?',
+        items: [
+          { t: 'It is cold today.', v: 'snowy' },
+          { t: 'I need an umbrella.', v: 'umbrella' },
+          { t: 'Put on your shoes.', v: 'shoes' },
+        ],
+      },
     ],
     parent: {
       goal: '옷 이름과 날씨 — 외출 준비를 영어로',
@@ -253,6 +292,74 @@ export const UNITS = [
     },
   },
 
+  // ------------------------------------------------------------------ school
+  {
+    id: 'school',
+    title: 'At School',
+    icon: '🎒',
+    color: '#FFE4B8',
+    scene: 'classroom',
+    sticker: '🎒',
+    activities: [
+      { type: 'learn', title: 'School Things', words: ['pencil', 'book2', 'bag', 'crayon', 'scissors', 'ruler'], cover: '🎒' },
+      { type: 'listen', title: 'Find It!', words: ['pencil', 'book2', 'bag', 'crayon', 'scissors', 'ruler'], q: 'Show me the {t}!', ok: '{T}!' },
+      {
+        type: 'move',
+        title: 'Class Time',
+        items: [
+          { t: 'Stand up!', e: '🧍', anim: 'stretch', beat: 'Up!', sfx: 'whoosh', n: 2 },
+          { t: 'Sit down!', e: '🪑', anim: 'stomp', beat: 'Down!', sfx: 'pop', n: 2 },
+          { t: 'Raise your hand!', e: '🙋', anim: 'wave', beat: 'Hands up!', sfx: 'sparkle', n: 2 },
+          { t: 'Open your book!', e: '📖', anim: 'jump', beat: 'Open!', sfx: 'pop', n: 2 },
+          { t: 'Be quiet. Shh!', e: '🤫', anim: 'wiggle', beat: 'Shh!', sfx: 'tap', n: 2 },
+        ],
+      },
+      {
+        type: 'talk',
+        title: 'Can I Borrow It?',
+        cast: ['buddy', 'friend'],
+        steps: [
+          { who: 'friend', mood: 'sad', c: "Oh no! I don't have a pencil." },
+          { who: 'buddy', c: '{name}, can you help?' },
+          {
+            choice: [
+              { v: 'pencil', t: 'Here you are!', then: [{ who: 'friend', mood: 'joy', anim: 'jump', prop: 'pencil', c: 'Thank you, {name}!' }, { who: 'buddy', prop: null, say: { t: "You're welcome!", e: '😊', key: ['welcome'] } }] },
+              { e: '🙅', t: "Sorry, I don't have one.", then: [{ who: 'buddy', prop: 'pencil', c: "That's okay! Here, use my pencil." }, { who: 'friend', mood: 'joy', anim: 'jump', prop: null, c: 'Thank you, {buddy}!' }] },
+            ],
+          },
+          { who: 'friend', mood: 'happy', c: "What's in your bag, {name}?" },
+          {
+            choice: [
+              { v: 'book2', t: 'I have a book.', then: [{ who: 'friend', anim: 'jump', c: "A book! Let's read!" }] },
+              { v: 'crayon', t: 'I have a crayon.', then: [{ who: 'friend', anim: 'jump', c: "A crayon! Let's draw!" }] },
+              { v: 'ruler', t: 'I have a ruler.', then: [{ who: 'friend', anim: 'jump', c: 'A ruler! Nice!' }] },
+            ],
+          },
+          { all: "Let's study together!", anim: 'jump' },
+        ],
+      },
+      { type: 'spell', title: 'Spell It!', words: ['bag', 'book2', 'ruler'] },
+      {
+        type: 'build',
+        title: 'In My Classroom',
+        items: [
+          { t: 'I have a pencil.', v: 'pencil' },
+          { t: 'Open your book.', v: 'book2' },
+          { t: 'May I go to the bathroom?', e: '🚻' },
+        ],
+      },
+    ],
+    parent: {
+      goal: '학교 물건과 교실 표현 — 학교생활 영어',
+      phrases: [
+        ['Stand up. / Sit down.', '일어나. / 앉아.', '숙제 시간이나 식사 시간에 놀이처럼 지시해 보세요.'],
+        ['Raise your hand.', '손 들어.', ''],
+        ['Can I borrow your pencil?', '연필 빌려줄래?', '형제자매·친구와 물건을 빌릴 때 쓰게 해 주세요.'],
+        ['May I go to the bathroom?', '화장실 가도 돼요?', '영어 수업에서 꼭 필요한 문장이에요.'],
+        ["What's in your bag? — I have a book.", '가방에 뭐 있어? — 책 있어.', '가방을 챙길 때 하나씩 꺼내며 말해 보세요.'],
+      ],
+    },
+  },
   // ------------------------------------------------------------------ 5
   {
     id: 'play',
@@ -271,6 +378,8 @@ export const UNITS = [
         title: 'I Like Pink!',
         steps: [{ c: 'What color do you like, {name}?' }, { choice: ['pink', 'blue', 'yellow', 'purple'].map(colorLike) }, { c: 'Colors are fun!' }],
       },
+      { type: 'spell', title: 'Spell the Colors', words: ['red', 'blue', 'pink'] },
+      { type: 'read', title: 'Read the Toys', words: ['ball', 'teddy', 'car', 'train', 'robot', 'puzzle'] },
     ],
     parent: {
       goal: '색깔과 장난감 — 놀이와 정리 시간',
@@ -307,6 +416,8 @@ export const UNITS = [
         ],
       },
       { type: 'count', title: 'Count the Animals', rounds: [{ v: 'duck', n: 3 }, { v: 'dog', n: 2 }, { v: 'cat', n: 4 }] },
+      { type: 'read', title: 'Read the Animals', words: ['dog', 'cat', 'duck', 'pig', 'cow', 'frog'] },
+      { type: 'spell', title: 'Spell the Animals', words: ['cat', 'dog', 'pig', 'cow'] },
     ],
     parent: {
       goal: '동물 이름과 울음소리, 몸으로 흉내 내기',
@@ -341,6 +452,16 @@ export const UNITS = [
           { t: 'Shake your body!', e: '💃', anim: 'shake', beat: 'Shake!', sfx: 'boing' },
           { t: 'Turn around!', e: '🔄', anim: 'spin', beat: 'Turn!', sfx: 'whoosh', n: 2 },
           { t: 'Jump!', e: '🦘', anim: 'jump', beat: 'Jump!', sfx: 'boing' },
+        ],
+      },
+      { type: 'spell', title: 'Spell My Face', words: ['nose', 'eyes', 'ears'] },
+      {
+        type: 'build',
+        title: 'Simon Says',
+        items: [
+          { t: 'Touch your nose.', v: 'nose' },
+          { t: 'Clap your hands.', e: '👏' },
+          { t: 'I have two eyes.', v: 'eyes' },
         ],
       },
     ],
@@ -406,6 +527,16 @@ export const UNITS = [
           { t: "I'm sleepy.", v: 'sleepy', key: ['sleepy'] },
         ],
       },
+      { type: 'read', title: 'Read the Feelings', words: ['happy', 'sad', 'angry', 'sleepy', 'scared'], nope: '{char} is {t}.' },
+      {
+        type: 'build',
+        title: 'How I Feel',
+        items: [
+          { t: 'I am happy today.', v: 'happy' },
+          { t: 'I feel sleepy.', v: 'sleepy' },
+          { t: "Don't be sad.", e: '🤗' },
+        ],
+      },
     ],
     parent: {
       goal: '감정 표현 — 내 마음을 영어로 말해요',
@@ -419,6 +550,68 @@ export const UNITS = [
     },
   },
 
+  // ------------------------------------------------------------------ family
+  {
+    id: 'family',
+    title: 'My Family',
+    icon: '🏡',
+    color: '#E2F3D8',
+    scene: 'park',
+    sticker: '🏡',
+    activities: [
+      { type: 'learn', title: 'My Family', words: ['mom', 'dad', 'brother', 'sister', 'grandma', 'grandpa'], cover: '💌' },
+      { type: 'listen', title: 'Who Is It?', words: ['mom', 'dad', 'brother', 'sister', 'grandma', 'grandpa', 'baby'], q: 'Where is {one}?', ok: '{T}!' },
+      {
+        type: 'talk',
+        title: 'This Is My Family',
+        steps: [
+          { prop: '👪', c: 'Look! This is my family!' },
+          { mood: 'love', anim: 'jump', c: 'I love my family!' },
+          { prop: null, mood: 'happy', c: 'Who is in your family, {name}?' },
+          {
+            choice: [
+              { v: 'mom', t: 'This is my mom.', then: [{ anim: 'wave', c: 'Hello! Nice to meet you!' }] },
+              { v: 'dad', t: 'This is my dad.', then: [{ anim: 'wave', c: 'Hello! Nice to meet you!' }] },
+              { v: 'brother', t: 'This is my brother.', then: [{ anim: 'wave', c: 'Hi! Nice to meet you!' }] },
+              { v: 'sister', t: 'This is my sister.', then: [{ anim: 'wave', c: 'Hi! Nice to meet you!' }] },
+            ],
+          },
+          { c: 'Say it with me!' },
+          { say: { t: 'I love my family.', e: '👪', key: ['love', 'family'] } },
+          { mood: 'joy', anim: 'jump', c: 'Me too!' },
+        ],
+      },
+      { type: 'read', title: 'Read the Family', words: ['mom', 'dad', 'brother', 'sister', 'grandma', 'grandpa', 'baby'] },
+      {
+        type: 'build',
+        title: 'About My Family',
+        items: [
+          { t: 'This is my mom.', v: 'mom' },
+          { t: 'I love my grandma.', v: 'grandma' },
+          { t: 'The baby is sleeping.', v: 'baby' },
+        ],
+      },
+      {
+        type: 'say',
+        title: 'I Love You!',
+        items: [
+          { t: 'I love you, Mom!', v: 'mom', key: ['love', 'mom'] },
+          { t: 'Thank you, Dad!', v: 'dad', key: ['thank', 'dad'] },
+          { t: 'Hi, Grandma!', v: 'grandma', key: ['grandma'] },
+        ],
+      },
+    ],
+    parent: {
+      goal: '가족 호칭과 소개하기',
+      phrases: [
+        ['This is my mom.', '이 사람은 우리 엄마야.', '가족 사진을 보며 한 명씩 소개해 보세요.'],
+        ['Who is this? — It\'s Grandma.', '이분은 누구야? — 할머니야.', ''],
+        ['I love my family.', '나는 우리 가족을 사랑해.', ''],
+        ['Thank you, Dad!', '고마워요, 아빠!', ''],
+        ['Nice to meet you.', '만나서 반가워.', '친척을 만났을 때 영어로 인사해 보세요.'],
+      ],
+    },
+  },
   // ------------------------------------------------------------------ 9
   {
     id: 'numbers',
@@ -428,34 +621,35 @@ export const UNITS = [
     scene: 'park',
     sticker: '🧁',
     activities: [
-      { type: 'learn', title: '1 to 5', words: ['n1', 'n2', 'n3', 'n4', 'n5'] },
-      { type: 'count', title: 'Count to 5', rounds: [{ v: 'star', n: 3 }, { v: 'balloon', n: 5 }, { v: 'cat', n: 2 }, { v: 'cookie', n: 4 }] },
-      { type: 'listen', title: 'Show Me Three!', words: ['n1', 'n2', 'n3', 'n4', 'n5'], q: 'Show me {t}!', ok: '{T}!', nope: "That's {t}.", rounds: 5 },
+      { type: 'count', title: 'Warm Up', rounds: [{ v: 'star', n: 6 }, { v: 'balloon', n: 9 }] },
+      { type: 'learn', title: '11 to 15', words: ['n11', 'n12', 'n13', 'n14', 'n15'] },
+      { type: 'learn', title: '16 to 20', words: ['n16', 'n17', 'n18', 'n19', 'n20'] },
+      { type: 'listen', title: 'Show Me Fifteen!', words: ['n11', 'n12', 'n13', 'n14', 'n15', 'n16', 'n17', 'n18', 'n19', 'n20'], q: 'Show me {t}!', ok: '{T}!', nope: "That's {t}.", rounds: 6 },
+      { type: 'count', title: 'Count to 20', rounds: [{ v: 'fish', n: 12 }, { v: 'strawberry', n: 15 }, { v: 'star', n: 20, ask: false }] },
       {
         type: 'drag',
         mode: 'give',
-        title: 'Give Me Two!',
-        rounds: [{ want: 'cookie', n: 2 }, { want: 'strawberry', n: 3 }, { want: 'apple', n: 4 }],
+        title: 'Give Me Three!',
+        rounds: [{ want: 'cookie', n: 3 }, { want: 'strawberry', n: 5 }, { want: 'apple', n: 4 }],
       },
-      { type: 'learn', title: '6 to 10', words: ['n6', 'n7', 'n8', 'n9', 'n10'] },
-      { type: 'count', title: 'Count to 10', rounds: [{ v: 'fish', n: 6 }, { v: 'strawberry', n: 8 }, { v: 'star', n: 10, ask: false }] },
+      { type: 'spell', title: 'Spell the Numbers', words: ['n1', 'n2', 'n6', 'n10'] },
       {
         type: 'move',
-        title: 'Jump Three Times!',
+        title: 'Jump Ten Times!',
         items: [
-          { t: 'Jump three times!', e: '🦘', anim: 'jump', n: 3, count: true, sfx: 'boing' },
-          { t: 'Clap five times!', e: '👏', anim: 'clap', n: 5, count: true, sfx: 'clap' },
-          { t: 'Stomp four times!', e: '🦶', anim: 'stomp', n: 4, count: true, sfx: 'stomp' },
+          { t: 'Jump ten times!', e: '🦘', anim: 'jump', n: 10, count: true, sfx: 'boing' },
+          { t: 'Clap twelve times!', e: '👏', anim: 'clap', n: 12, count: true, sfx: 'clap' },
         ],
       },
     ],
     parent: {
-      goal: '숫자 1~10 — 세고, 고르고, 건네기',
+      goal: '숫자 11~20 — 세고, 고르고, 건네고, 철자 쓰기',
       phrases: [
         ['How many?', '몇 개야?', '간식을 줄 때 함께 세어 보세요.'],
         ['One, two, three…', '하나, 둘, 셋…', '계단을 오를 때 소리 내어 세어요.'],
         ['Can I have two cookies, please?', '쿠키 두 개 줄래요?', '아이가 숫자를 넣어 요청하게 해 주세요.'],
-        ['Jump three times!', '세 번 점프!', ''],
+        ['Jump ten times!', '열 번 점프!', ''],
+        ['eleven, twelve, … twenty', '11, 12, … 20', '엘리베이터 층수, 달력 날짜로 11~20을 읽어 보세요.'],
       ],
     },
   },
@@ -504,6 +698,15 @@ export const UNITS = [
           { t: 'Good night!', e: '🌙', key: ['night'] },
           { t: 'Sweet dreams!', e: '✨', key: ['dreams'] },
           { t: 'I love you!', e: '💖', key: ['love'] },
+        ],
+      },
+      {
+        type: 'build',
+        title: 'My Night',
+        items: [
+          { t: 'It is time for bed.', v: 'bed' },
+          { t: 'I read a book.', v: 'book' },
+          { t: 'Good night, Mom!', e: '🌙' },
         ],
       },
     ],

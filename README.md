@@ -1,8 +1,9 @@
 # 🐰 Yeonwoo's English Friends
 
-연우를 위한 **놀이형 영어 앱**입니다. 세 친구(분홍 토끼 Momo, 구름 강아지 Puff, 하트 요정 Lulu)와 함께
+만 7세 연우를 위한 **놀이형 영어 앱**입니다. 세 친구(분홍 토끼 Momo, 구름 강아지 Puff, 하트 요정 Lulu)와 함께
 아침부터 잠들 때까지의 **생활 상황** 속에서 영어를 듣고, 만지고, 말하고, 몸으로 따라 하며 익힙니다.
 
+- 만 7세 수준에 맞춰 듣기·말하기에 더해 **읽기, 철자, 문장 만들기**와 숫자 11~20을 함께 다룹니다.
 - 아이 화면에는 **한국어 번역이 없습니다.** 뜻은 그림, 애니메이션, 상황, 몸짓으로 전달합니다.
 - 일방적으로 보여 주기보다 **아이가 직접 하는 활동**(탭, 드래그, 문지르기, 말하기, 몸 움직이기)이 중심입니다.
 - 틀려도 혼나는 화면이 없습니다. 틀린 그림을 누르면 그 그림의 이름을 알려 주고, 두 번 틀리면 정답이 반짝입니다.
@@ -12,16 +13,18 @@
 
 | # | 단원 | 핵심 표현 | 활동 |
 |---|------|-----------|------|
-| 1 | 👋 Hello, Friends! | Hello! / My name is… / How are you? | 친구 만나기 대화, 친구 찾기, 말하기 |
-| 2 | 🌞 Good Morning! | Wake up! / Brush your teeth. / Wash your face. | 톡톡 깨우기, 양치·세수 문지르기 |
-| 3 | 🍓 Yummy Breakfast | Can I have…, please? / Here you are. / Yes, please. | 음식 먹여 주기(드래그), 주고받기 대화, 세기 |
-| 4 | 👗 Get Dressed! | Put on the hat. / It's raining! | 옷 입히기, 날씨에 맞는 물건 고르기 |
-| 5 | 🎈 Colors & Toys | What color? / I like pink! / Clean up! | 풍선 터뜨리기, 장난감 정리(상자에 넣기) |
-| 6 | 🐶 Animal Friends | Who says "Moo"? / Hop like a bunny! | 울음소리 맞히기, 동물 흉내 몸놀이 |
-| 7 | 👀 My Body | Where is my nose? / Touch your nose! / Clap your hands! | 캐릭터 몸 만지기, 몸 동작 따라 하기 |
-| 8 | 💖 How Do You Feel? | I'm happy / sad / sleepy. / Don't be sad! | 친구 위로하기, 오늘 기분 말하기 |
-| 9 | 🔢 Let's Count! | How many? / Give me two, please. / Jump three times! | 세기, 개수만큼 건네기, 숫자만큼 점프 |
-| 10 | 🌙 Good Night! | Wash your hands. / Turn off the light. / Good night! | 손 씻기·헹구기, 불 끄고 잠자기 |
+| 1 | 👋 Hello, Friends! | Hello! / My name is… / Nice to meet you! | 친구 만나기 대화, 친구 찾기, 말하기, 문장 만들기 |
+| 2 | 🌞 Good Morning! | I wake up at seven. / I brush my teeth. | 톡톡 깨우기, 양치·세수 문지르기, 문장 만들기 |
+| 3 | 🍓 Yummy Breakfast | Can I have some milk, please? / I like strawberries. | 먹여 주기, 주고받기 대화, 단어 읽기, 철자 |
+| 4 | 👗 Get Dressed! | Put on your shoes. / It is cold today. | 옷 입히기, 날씨 물건 고르기, 날씨 문장 읽기 |
+| 5 | 🎒 At School | Stand up! / Can I borrow your pencil? / I have a book. | 교실 지시 따라 하기, 빌려주기 대화, 철자, 문장 |
+| 6 | 🎈 Colors & Toys | I like pink! / Clean up! | 풍선 터뜨리기, 장난감 정리, 색깔 철자, 읽기 |
+| 7 | 🐶 Animal Friends | Who says "Moo"? / Hop like a bunny! | 울음소리 맞히기, 동물 흉내, 읽기, 철자 |
+| 8 | 👀 My Body | Where is my nose? / Touch your nose. | 몸 만지기, 몸 동작, 철자, 문장 만들기 |
+| 9 | 💖 How Do You Feel? | I am happy today. / Don't be sad. | 친구 위로하기, 오늘 기분 말하기, 읽기, 문장 |
+| 10 | 🏡 My Family | This is my mom. / I love my family. | 가족 소개 대화, 읽기, 문장 만들기, 말하기 |
+| 11 | 🔢 Let's Count! | eleven … twenty / Jump ten times! | 20까지 세기, 숫자 고르기, 건네기, 숫자 철자 |
+| 12 | 🌙 Good Night! | It is time for bed. / Good night! | 손 씻기·헹구기, 불 끄고 잠자기, 문장 만들기 |
 
 단원마다 활동을 모두 마치면 **스티커**를 받고, 활동마다 ⭐을 모읍니다.
 
@@ -39,6 +42,9 @@
 | 💬 | talk | 짧은 상황극. 친구를 톡톡 깨우고, 말풍선 그림을 골라 대답해요 |
 | 🕺 | move | 친구 동작을 보고 실제로 손뼉 치고 점프해요 |
 | 🎈 | balloons | 말한 색깔의 풍선을 터뜨려요 |
+| 📖 | read | 영어 단어·문장을 읽고 맞는 그림을 골라요 (🔊로 도움 듣기) |
+| 🔤 | spell | 그림을 보고 글자를 순서대로 눌러 철자를 완성해요 (처음 두 단어는 흐린 글자가 보여요) |
+| 🧩 | build | 문장을 듣고 단어 카드를 순서대로 놓아 문장을 만들어요 |
 
 ## 실행 방법
 
@@ -93,7 +99,7 @@ js/characters.js           세 친구 SVG, 표정, 말하기, 옷 입기
 js/core/                   음성·마이크·효과음·드래그·공통 UI·저장
 js/content/vocab.js        단어와 그림
 js/content/units.js        단원·활동·대화 대본·부모님 가이드
-js/activities/             활동 엔진 10종
+js/activities/             활동 엔진 13종
 js/screens/                시작·홈·단원·스티커·부모님·활동 화면
 tests/playthrough.cjs      모든 활동 자동 플레이 테스트
 ```
@@ -108,7 +114,7 @@ tests/playthrough.cjs      모든 활동 자동 플레이 테스트
 
 ```bash
 python3 -m http.server 8765 &
-node tests/playthrough.cjs           # 태블릿 가로 크기로 48개 활동 전부 자동 플레이
+node tests/playthrough.cjs           # 태블릿 가로 크기로 75개 활동 전부 자동 플레이
 node tests/playthrough.cjs "" 390 844  # 휴대폰 세로
 ```
 
