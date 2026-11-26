@@ -62,7 +62,7 @@ python3 -m http.server 8000
 `.github/workflows/pages.yml` 이 들어 있습니다.
 
 1. 저장소 **Settings → Pages → Build and deployment → Source** 를 **GitHub Actions** 로 바꿉니다.
-2. `main` 브랜치에 병합(push)하면 자동으로 배포됩니다. (Actions 탭에서 수동 실행도 가능)
+2. 기본 브랜치(`claude/ecstatic-archimedes-8i24of` 또는 `main`)에 새 커밋이 올라오면 자동으로 배포됩니다. (Actions 탭에서 수동 실행도 가능)
 3. `https://momokjy.github.io/yeonwoo_english/` 를 태블릿 Safari/Chrome에서 열고 **공유 → 홈 화면에 추가** 하면 앱처럼 쓸 수 있습니다.
 
 ## 부모님 페이지

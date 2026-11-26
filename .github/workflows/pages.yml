@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # main, and the branch this repository currently uses as its default
+    branches: [main, claude/ecstatic-archimedes-8i24of]
   workflow_dispatch:
 
 permissions:
