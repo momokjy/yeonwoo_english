@@ -1,7 +1,9 @@
 // Offline support. Network first (so updates arrive right away),
 // falling back to the cache when there is no internet.
 
-const CACHE = 'taeri-english-v2';
+// Each app on the same GitHub Pages site needs its own cache prefix.
+const PREFIX = 'yeonwoo-english-';
+const CACHE = PREFIX + 'v3';
 const CORE = [
   './',
   'index.html',
@@ -53,7 +55,7 @@ self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => k.startsWith(PREFIX) && k !== CACHE).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
 });

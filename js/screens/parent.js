@@ -49,9 +49,9 @@ export function parentScreen() {
 
   // --- child
   const nameIn = h('input', { type: 'text', value: s.childName, maxlength: '20' });
-  const sayIn = h('input', { type: 'text', value: s.childSay, maxlength: '30', placeholder: '예: Tae-ri' });
+  const sayIn = h('input', { type: 'text', value: s.childSay, maxlength: '30', placeholder: '예: Yun-woo' });
   nameIn.addEventListener('change', () => {
-    s.childName = nameIn.value.trim() || 'Taeri';
+    s.childName = nameIn.value.trim() || 'Yeonwoo';
     if (!sayIn.value.trim()) s.childSay = s.childName;
     commit();
   });
@@ -170,7 +170,7 @@ export function parentScreen() {
         'ul',
         null,
         ...u.parent.phrases.map(([en, ko, tip]) =>
-          h('li', null, h('button', { class: 'p-say', type: 'button', 'aria-label': '듣기', onClick: () => speak(en.replace(/Taeri/g, s.childSay || 'Taeri'), { pitch: 1.1 }) }, '🔊'), h('div', null, h('b', null, en), h('span', { class: 'p-ko' }, ko), tip ? h('div', { class: 'p-tip' }, tip) : null)),
+          h('li', null, h('button', { class: 'p-say', type: 'button', 'aria-label': '듣기', onClick: () => speak(en.replace(/Yeonwoo/g, s.childSay || 'Yun-woo'), { pitch: 1.1 }) }, '🔊'), h('div', null, h('b', null, en), h('span', { class: 'p-ko' }, ko), tip ? h('div', { class: 'p-tip' }, tip) : null)),
         ),
       ),
     ),
@@ -217,7 +217,7 @@ export function parentScreen() {
         ),
         ...support.map((t) => h('p', { class: 'p-warn' }, t)),
       ),
-      section('아이 이름', row('화면에 보일 이름', nameIn), row('영어 발음용 철자', sayIn, testName), h('p', { class: 'p-help' }, '영어 음성이 이름을 어색하게 읽으면 발음용 철자를 바꿔 보세요. (예: Taeri → Tae-ri, Teh-ree)')),
+      section('아이 이름', row('화면에 보일 이름', nameIn), row('영어 발음용 철자', sayIn, testName), h('p', { class: 'p-help' }, '영어 음성이 이름을 어색하게 읽으면 발음용 철자를 바꿔 보세요. (예: Yeonwoo → Yun-woo, Yuhn-woo)')),
       section(
         '목소리',
         row('영어 목소리', voiceSel),

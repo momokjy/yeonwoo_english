@@ -1,4 +1,4 @@
-// The three friends. Original designs (inspired by what Taeri loves:
+// The three friends. Original designs (cute and kid-friendly:
 // a pink bunny, a fluffy sky-blue puppy and a little heart fairy).
 // Parents can rename them and use their own pictures in the parent page.
 //

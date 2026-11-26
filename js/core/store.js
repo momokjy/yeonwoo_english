@@ -1,11 +1,11 @@
 // Progress + settings, persisted in localStorage (this device only).
 
-const KEY = 'taeri-english-v1';
+const KEY = 'yeonwoo-english-v1'; // separate from other apps on the same site
 
 const defaults = () => ({
   settings: {
-    childName: 'Taeri', // shown on screen
-    childSay: 'Taeri', // how the English voice should pronounce it
+    childName: 'Yeonwoo', // shown on screen
+    childSay: 'Yun-woo', // how the English voice should pronounce it (연우)
     rate: 0.85, // speech speed (kids like it a bit slower)
     pitch: 1, // multiplies every friend's voice pitch (parent page: 목소리 높이)
     voiceURI: '',

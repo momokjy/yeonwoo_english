@@ -1,4 +1,4 @@
-// Taeri's day, in ten little units. Each unit = a few short activities
+// A child's day, in ten little units. Each unit = a few short activities
 // (about 10–15 minutes in total). Child-facing text is English only;
 // `parent` holds the Korean guide shown on the parent page.
 
@@ -34,7 +34,7 @@ export const UNITS = [
           { who: 'puff', anim: 'jump', sfx: 'pop', c: "Hi! I'm {puff}!" },
           { who: 'lulu', anim: 'jump', sfx: 'pop', c: "Hello! I'm {lulu}!" },
           { who: 'momo', c: "What's your name?" },
-          { who: 'momo', say: { t: 'My name is {name}.', e: '👧', key: ['name'] } },
+          { who: 'momo', say: { t: 'My name is {name}.', e: '🧒', key: ['name'] } },
           { all: 'Hello, {name}!', anim: 'jump' },
           { choice: [{ e: '👋', t: 'Hello!' }, { e: '😄', t: 'Hi!' }] },
           { all: 'Yay! We are friends!', anim: 'jump', sfx: 'fanfare' },
@@ -63,7 +63,7 @@ export const UNITS = [
         title: 'Say Hello',
         items: [
           { t: 'Hello!', e: '👋' },
-          { t: 'My name is {name}.', e: '👧', key: ['name'] },
+          { t: 'My name is {name}.', e: '🧒', key: ['name'] },
           { t: 'Bye-bye!', e: '🙋' },
         ],
       },
@@ -73,7 +73,7 @@ export const UNITS = [
       phrases: [
         ['Hello! / Hi!', '안녕!', '어린이집 갈 때, 처음 만날 때 손을 흔들며 인사해 주세요.'],
         ["What's your name?", '이름이 뭐야?', '인형을 들고 역할놀이로 물어봐 주세요. 아이가 인형에게 물어보게 해도 좋아요.'],
-        ['My name is Taeri.', '내 이름은 태리야.', '"My name is…" 뒤의 이름만 바꿔 가족 이름으로 놀이해요.'],
+        ['My name is Yeonwoo.', '내 이름은 연우야.', '"My name is…" 뒤의 이름만 바꿔 가족 이름으로 놀이해요.'],
         ['How are you? — I\'m good!', '기분 어때? — 좋아!', '하원 후 매일 같은 질문을 해 주세요.'],
         ['Bye-bye! / See you!', '잘 가! / 또 봐!', '헤어질 때 항상 같은 표현을 쓰면 금방 익숙해져요.'],
       ],
